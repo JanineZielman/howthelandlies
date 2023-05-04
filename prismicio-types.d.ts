@@ -93,6 +93,17 @@ interface SettingsDocumentData {
    *
    */
   image: prismicT.ImageField<never>;
+  /**
+   * Footer field in *Settings*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.footer
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/core-concepts/rich-text-title
+   *
+   */
+  footer: prismicT.RichTextField;
 }
 /**
  * Settings document from Prismic

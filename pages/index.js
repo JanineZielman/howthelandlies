@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { createClient } from "../prismicio";
-import { PrismicLink, SliceZone } from "@prismicio/react";
+import { PrismicLink, SliceZone, PrismicRichText } from "@prismicio/react";
 import { components } from "../slices";
 
 export default function Home({page, settings}) {
+  console.log(settings)
   return (
     <>
       <Head>
@@ -23,6 +24,9 @@ export default function Home({page, settings}) {
           <SliceZone slices={page.data.slices} components={components} />
         </div>
       </main>
+      <footer>
+        <PrismicRichText field={settings.data.footer}/>
+      </footer>
     </>
   )
 }

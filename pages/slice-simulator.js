@@ -3,12 +3,10 @@ import { SliceZone } from "@prismicio/react";
 
 import { components } from "../slices";
 
-const SliceSimulatorPage = () => {
+export default function SliceSimulatorPage() {
   return (
     <SliceSimulator
       sliceZone={(props) => <SliceZone {...props} components={components} />}
     />
   );
-};
-
-export default SliceSimulatorPage;
+}

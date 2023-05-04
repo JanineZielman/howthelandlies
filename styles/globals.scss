@@ -49,6 +49,10 @@ ul, li{
   font-size: $xsmall;
 }
 
+a{
+  color: inherit;
+}
+
 .content{
   width: 95%;
   margin: auto;
@@ -71,6 +75,7 @@ ul, li{
   }
   .collapsible-content{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 0;
     opacity: 0;
@@ -85,6 +90,7 @@ ul, li{
         max-height: 85vh;
         object-fit: cover;
       }
+      margin-bottom: 48px;
     }
   }
   &.open{
@@ -119,5 +125,18 @@ ul, li{
   }
   100% {
     transform: translate(-100%, 0);
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  border-top: 2px solid $red;
+  margin-top: 48px;
+  p{
+    font-size: $small;
+    margin-top: 10px;
   }
 }

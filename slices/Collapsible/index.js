@@ -8,7 +8,7 @@ import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 
 const Collapsible = ({ slice }) => {
-  console.log(slice)
+
   function toggleClass() {
     var element = document.getElementById(slice.id);
     element.classList.toggle("open");

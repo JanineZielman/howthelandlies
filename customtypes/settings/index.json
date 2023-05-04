@@ -21,6 +21,15 @@
       "image": {
         "type": "Image",
         "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+      },
+      "footer": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Footer",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink"
+        }
       }
     }
   }

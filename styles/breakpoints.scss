@@ -26,6 +26,7 @@
   }
     
   .collapsible{
+    margin: 14px 0;
     .trigger{
       font-size: $medium;
     }
@@ -33,6 +34,7 @@
       flex-direction: column;
       .column{
         width: 100%;
+        margin-bottom: 0;
         img{
           margin-top: 14px;
           width: 100%;
@@ -47,6 +49,11 @@
         height: auto;
         opacity: 1;
       }
+    }
+  }
+  footer{
+    p{
+      font-size: $small;
     }
   }
 }
