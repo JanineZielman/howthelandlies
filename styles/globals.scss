@@ -1,0 +1,80 @@
+$red: #F15C23;
+
+$big: 90px;
+$medium: 40px;
+$small: 20px;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  color: $red;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.hero{
+  width: 100vw;
+  height: 75vh;
+  margin-top: 100px;
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+p{
+  font-size: $small;
+}
+
+.content{
+  width: 95%;
+  margin: auto;
+  display: block;
+}
+
+.collapsible{
+  margin: 24px 0;
+  .trigger{
+    font-size: $medium;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    cursor: pointer;
+    .line{
+      width: 100%;
+      border-bottom: 2px solid $red;
+      margin-left: 14px;
+    }
+  }
+}
+
+
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 888;
+  font-size: $big;
+  font-weight: 400;
+  span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 60s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
