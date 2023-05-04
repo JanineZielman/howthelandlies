@@ -3,17 +3,35 @@
  * @typedef {import("@prismicio/react").SliceComponentProps<CollapsibleSlice>} CollapsibleProps
  * @param {CollapsibleProps}
  */
+
+import { PrismicRichText } from "@prismicio/react";
+import { PrismicNextImage } from "@prismicio/next";
+
 const Collapsible = ({ slice }) => {
-  // console.log(slice)
+  console.log(slice)
+  function toggleClass() {
+    var element = document.getElementById(slice.id);
+    element.classList.toggle("open");
+  }
+
   return (
-    <div className="collapsible">
-      <div className="trigger">{slice.primary.title}<div className="line"></div></div>
+    <div className="collapsible" id={slice.id}>
+      <div className="trigger" onClick={toggleClass}>{slice.primary.title}<div className="line"></div></div>
       <div className="collapsible-content">
         {slice.items.map((item,i) => {
           return(
-            <div className="column">
-
-            </div>
+            <>
+            {item.text &&
+              <div className="column">
+                <PrismicRichText field={item.text}/>
+              </div>
+            }
+            {item.image.url &&
+             <div className="column">
+              <PrismicNextImage field={item.image} />
+             </div>
+            }
+            </>
           )
         })}
       </div>

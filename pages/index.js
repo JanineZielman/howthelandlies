@@ -5,7 +5,6 @@ import { PrismicLink, SliceZone } from "@prismicio/react";
 import { components } from "../slices";
 
 export default function Home({page, settings}) {
-  console.log(page)
   return (
     <>
       <Head>
