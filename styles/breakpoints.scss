@@ -1,10 +1,19 @@
 @media only screen and (max-width: 900px) {
   $big: 70px;
   $medium: 30px;
-  $small: 16px;
+  $small: 18px;
+  $xsmall: 14px;
 
   p{
+    font-size: $xsmall;
+  }
+
+  h2{
     font-size: $small;
+  }
+
+  ul, li{
+    font-size: $xsmall;
   }
 
   .marquee {
@@ -13,6 +22,7 @@
 
   .hero{
     margin-top: 80px;
+    height: auto;
   }
     
   .collapsible{

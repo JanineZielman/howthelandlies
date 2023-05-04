@@ -15,7 +15,7 @@ export default function Home({page, settings}) {
           <span>{page.data.title} {page.data.title} {page.data.title}</span>
         </h1>
         <div className='hero'>
-          <video controls muted autoPlay loop>
+          <video controls muted autoPlay loop playsInline>
             <source src={page.data.video.url} type="video/mp4"/>
           </video>
         </div>
