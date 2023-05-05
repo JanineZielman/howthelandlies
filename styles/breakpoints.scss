@@ -2,10 +2,9 @@
   $big: 70px;
   $medium: 30px;
   $small: 18px;
-  $xsmall: 14px;
 
   p{
-    font-size: $xsmall;
+    font-size: $small;
   }
 
   h2{
@@ -13,7 +12,7 @@
   }
 
   ul, li{
-    font-size: $xsmall;
+    font-size: $small;
   }
 
   .marquee {

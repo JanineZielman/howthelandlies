@@ -3,7 +3,6 @@ $red: #F15C23;
 $big: 90px;
 $medium: 40px;
 $small: 24px;
-$xsmall: 16px;
 
 *{
   box-sizing: border-box;
@@ -16,7 +15,7 @@ body{
   font-family: Helvetica, sans-serif;
   width: 100vw;
   overflow-x: hidden;
-  font-size: $xsmall;
+  font-size: $small;
 }
 
 .hero{
@@ -27,26 +26,22 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    // pointer-events: none;
   }
 }
 
 p{
-  font-size: $xsmall;
-  line-height: 1.3;
-}
-
-h2{
-  font-weight: 400;
   font-size: $small;
   line-height: 1.3;
 }
+
 
 strong{
   font-weight: 600;
 }
 
 ul, li{
-  font-size: $xsmall;
+  font-size: $small;
 }
 
 a{
@@ -112,6 +107,7 @@ a{
   z-index: 888;
   font-size: $big;
   font-weight: 400;
+  background-color: white;
   span {
     display: inline-block;
     padding-left: 100%;

@@ -13,10 +13,10 @@ export default function Home({page, settings}) {
       </Head>
       <main className={` `}>
         <h1 className="marquee">
-          <span>{page.data.title} {page.data.title} {page.data.title}</span>
+          <span>{page.data.title} &nbsp; {page.data.title} &nbsp; {page.data.title}</span>
         </h1>
         <div className='hero'>
-          <video controls muted autoPlay loop playsInline>
+          <video muted autoPlay loop playsInline>
             <source src={page.data.video.url} type="video/mp4"/>
           </video>
         </div>
