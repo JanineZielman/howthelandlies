@@ -15,6 +15,15 @@
         "title": {
           "type": "Text",
           "config": { "label": "Title", "placeholder": "" }
+        },
+        "imageslideshow": {
+          "type": "Boolean",
+          "config": {
+            "label": "ImageSlideshow",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {

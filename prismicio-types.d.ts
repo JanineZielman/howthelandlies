@@ -136,6 +136,17 @@ interface CollapsibleSliceDefaultPrimary {
    *
    */
   title: prismicT.KeyTextField;
+  /**
+   * ImageSlideshow field in *Collapsible → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: collapsible.primary.imageslideshow
+   * - **Documentation**: https://prismic.io/docs/core-concepts/boolean
+   *
+   */
+  imageslideshow: prismicT.BooleanField;
 }
 /**
  * Item in Collapsible → Items
