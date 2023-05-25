@@ -20,6 +20,7 @@ const Collapsible = ({ slice }) => {
 
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 1000,
     fade: true,
